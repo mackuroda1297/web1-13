@@ -16,6 +16,8 @@ document.getElementById('countdown').textContent =
   countent[3] + '日' +
   countent[2] + '時' +
   countent[1] + '分' +
-  countent[0] + '秒';
-  
-  
+  countent[0] + '秒';  
+
+document.getElementById('from').select.onchange = function(){
+  location.href = document.getElementById('form').select.value;
+}
