@@ -12,12 +12,12 @@ var separate_time = function(time){
 var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent =
-  countent[5] + '年' +
-  countent[4] + '月' +
-  countent[3] + '日' +
-  countent[2] + '時' +
-  countent[1] + '分' +
-  countent[0] + '秒';
+  counter[5] + '年' +
+  counter[4] + '月' +
+  counter[3] + '日' +
+  counter[2] + '時' +
+  counter[1] + '分' +
+  counter[0] + '秒';
 
 
 //遷移
