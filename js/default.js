@@ -9,15 +9,15 @@ var separate_time = function(time){
   return [sec, min, hours, days, month, year];
 }
 
-var now = new DAte();
+var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent =
-  countent[5] + '年' +
-  countent[4] + '月' +
-  countent[3] + '日' +
-  countent[2] + '時' +
-  countent[1] + '分' +
-  countent[0] + '秒';
+  counter[5] + '年' +
+  counter[4] + '月' +
+  counter[3] + '日' +
+  counter[2] + '時' +
+  counter[1] + '分' +
+  counter[0] + '秒';
 
 
 //遷移
@@ -34,7 +34,7 @@ if(filename === 'other.html'){
 }
 opt.selected = true;
 
-document.getElementById('from').select.onchange = function(){
+document.getElementById('form').select.onchange = function(){
   location.href = document.getElementById('form').select.value;
 }
 
@@ -52,17 +52,17 @@ function setCookie(c_name,value,expiredays){
   }else{
     s += "; ";
   }
-  doucument.cookie=s;
+  document.cookie=s;
 }
 
 function getCookie(c_name){
   var st="";
   var ed="";
   if(0 < document.cookie.length){
-    st=document.cookie.indexof(c_name + "=");
+    st=document.cookie.indexOf(c_name + "=");
     if(st!=-1){
       st=st+c_name.length+1;
-      ed=document.cookie.indexof(";",st);
+      ed=document.cookie.indexOf(";",st);
       if(ed==-1) ed=document.cookie.length;
       return unescape(document.cookie.substring(st,ed));
     }
@@ -81,6 +81,6 @@ var current_time = new Date();
 setCookie('lastDate',current_time.toString(),7);
 
 //クッキーの消去
-document.getELementById('remove_cookie'.onsubmit = function(){
+document.getElementById('remove_cookie').onsubmit = function(){
   setCookie('lastDate',"",0);
 };
