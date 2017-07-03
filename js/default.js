@@ -52,7 +52,7 @@ function setCookie(c_name,value,expiredays){
   }else{
     s += "; ";
   }
-  doucument.cookie=s;
+  document.cookie=s;
 }
 
 function getCookie(c_name){
