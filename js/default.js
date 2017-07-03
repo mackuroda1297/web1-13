@@ -9,7 +9,7 @@ var separate_time = function(time){
   return [sec, min, hours, days, month, year];
 }
 
-var now = new DAte();
+var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent =
   countent[5] + '年' +
