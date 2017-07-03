@@ -70,3 +70,7 @@ function getCookie(c_name){
   return "";
 }
       
+//クッキーの消去
+document.getELementById('remove_cookie'.onsubmit = function(){
+  setCookie('lastDate',"",0);
+};
