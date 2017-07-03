@@ -81,6 +81,6 @@ var current_time = new Date();
 setCookie('lastDate',current_time.toString(),7);
 
 //クッキーの消去
-document.getELementById('remove_cookie'.onsubmit = function(){
+document.getELementById('remove_cookie').onsubmit = function(){
   setCookie('lastDate',"",0);
 };
